@@ -1,0 +1,169 @@
+body {
+  background-color: rgba(40, 35, 35, 1);
+}
+
+.contenedor {
+  display: grid;
+  place-items: center;
+  background-color: transparent;
+}
+
+.marco {
+  position: relative;
+  font-family: "IBM Plex Mono", monospace;
+  height: 500px;
+  width: 450px;
+  margin-top: 55px;
+  overflow: hidden;
+  background-color: rgba(40, 35, 35, 1);
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid wheat;
+
+  display: grid;
+  grid-template-areas:
+    "result result result result result"
+    "result result result result result"
+    "result result result result result"
+    "result result result result result"
+    "reset  reset borrar par-izq  divi "
+    "reset reset borrar par-der divi"
+    "siete ocho nueve multi  multi"
+    "siete ocho nueve multi multi"
+    "siete ocho nueve multi  multi"
+    "cuatro cinco seis resta resta"
+    "cuatro cinco seis resta resta"
+    "cuatro cinco seis resta resta"
+    "uno dos tres suma suma"
+    "uno dos tres suma suma"
+    "uno dos tres suma suma"
+    "cero punto igual igual igual "
+    "cero punto igual igual igual";
+  gap: 15px;
+}
+
+.marco div {
+  background-color: rgba(40, 35, 35, 1);
+  display: grid;
+  place-items: center;
+  font-size: 24px;
+  border: 1px solid wheat;
+  color: wheat;
+  cursor: pointer;
+}
+.marco div ::-webkit-scrollbar {
+  height: 0;
+  width: 0;
+}
+.marco div:active {
+  transform: scale(97%);
+}
+.marco div:hover {
+  background-color: rgba(34, 33, 33, 0.9);
+}
+
+div.resultado {
+  grid-area: result;
+  border-radius: 6px;
+  background-color: rgb(47, 218, 200);
+  color: black;
+  border: 2px solid wheat;
+  justify-content: start;
+  overflow-x: hidden;
+}
+div.resultado:hover {
+  background-color: rgb(47, 218, 200);
+}
+div.resultado:active {
+  transform: scale(100%);
+}
+div.reset {
+  grid-area: reset;
+  border-radius: 7px;
+  color: rgb(250, 52, 52);
+  font-size: 28px;
+}
+
+div.borrar {
+  grid-area: borrar;
+  border-radius: 7px;
+  color: rgb(250, 52, 52);
+  font-size: 28px;
+}
+div.igual {
+  grid-area: igual;
+  border-radius: 7px;
+  color: rgb(250, 52, 52);
+  font-size: 40px;
+}
+div.suma {
+  grid-area: suma;
+  border-radius: 7px;
+  color: lightseagreen;
+  font-size: 36px;
+}
+div.resta {
+  grid-area: resta;
+  border-radius: 7px;
+  color: lightseagreen;
+  font-size: 36px;
+}
+div.multiplicacion {
+  grid-area: multi;
+  border-radius: 7px;
+  color: lightseagreen;
+  font-size: 26px;
+}
+div.divicion {
+  grid-area: divi;
+  border-radius: 7px;
+  color: lightseagreen;
+  font-size: 36px;
+}
+.boton-1 {
+  grid-area: uno;
+}
+.boton-2 {
+  grid-area: dos;
+}
+
+.boton-3 {
+  grid-area: tres;
+}
+.boton-4 {
+  grid-area: cuatro;
+}
+.boton-5 {
+  grid-area: cinco;
+}
+.boton-6 {
+  grid-area: seis;
+}
+.boton-7 {
+  grid-area: siete;
+}
+.boton-8 {
+  grid-area: ocho;
+}
+.boton-9 {
+  grid-area: nueve;
+}
+div.boton-0 {
+  grid-area: cero;
+  border-radius: 7px;
+}
+div.punto {
+  grid-area: punto;
+  border-radius: 7px;
+}
+div.parentesis-izq {
+  grid-area: par-izq;
+  border-radius: 7px;
+}
+div.parentesis-der {
+  grid-area: par-der;
+  border-radius: 7px;
+}
+
+
+  
