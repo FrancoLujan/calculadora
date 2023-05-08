@@ -42,7 +42,7 @@ body {
   gap: 15px;
 }
 
-.marco div {
+.marco div{
   background-color: rgba(40, 35, 35, 1);
   display: grid;
   place-items: center;
@@ -55,10 +55,10 @@ body {
   height: 0;
   width: 0;
 }
-.marco div:active {
+.marco div:active:not(.resultado) {
   transform: scale(97%);
 }
-.marco div:hover {
+.marco div:hover:not(.resultado) {
   background-color: rgba(34, 33, 33, 0.9);
 }
 
@@ -72,13 +72,9 @@ div.resultado {
   overflow-x: hidden;
   padding-right: 19px;
   font-size: 30px;
+  cursor: auto;
 }
-div.resultado:hover {
-  background-color: rgb(47, 218, 200);
-}
-div.resultado:active {
-  transform: scale(100%);
-}
+
 div.reset {
   grid-area: reset;
   border-radius: 7px;
@@ -166,6 +162,3 @@ div.parentesis-der {
   grid-area: par-der;
   border-radius: 7px;
 }
-
-
-  
