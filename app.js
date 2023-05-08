@@ -29,7 +29,6 @@ function r_operacion() {
   let r_texto = resultado.textContent;
   r_texto = r_texto.replace(/x/g, "*");
   r_texto = r_texto.replace(/\u00F7/g, "/");
-  console.log(r_texto);
   try {
     if (r_texto.slice(-1) == "0" && r_texto.slice(-2) == "/") {
       r_texto = "SINTAXIS ERROR";
