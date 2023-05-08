@@ -44,6 +44,7 @@ function r_operacion() {
 function numeros_operaciones(e) {
   e.preventDefault();
   let clase = e.target.classList;
+  
   if (clase[0] != "marco") {
     let tipo_boton = botonesEspeciales[clase[0]] || numeros[clase[0]];
 

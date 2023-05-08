@@ -68,8 +68,10 @@ div.resultado {
   background-color: rgb(47, 218, 200);
   color: black;
   border: 2px solid wheat;
-  justify-content: start;
+  justify-content: end;
   overflow-x: hidden;
+  padding-right: 19px;
+  font-size: 30px;
 }
 div.resultado:hover {
   background-color: rgb(47, 218, 200);
