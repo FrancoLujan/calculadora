@@ -44,7 +44,7 @@ function r_operacion() {
 function numeros_operaciones(e) {
   e.preventDefault();
   let clase = e.target.classList;
-  
+
   if (clase[0] != "marco") {
     let tipo_boton = botonesEspeciales[clase[0]] || numeros[clase[0]];
 
@@ -54,9 +54,10 @@ function numeros_operaciones(e) {
       } else if (numeros[clase[0]] == "/") {
         tipo_boton = "&#247";
       }
-      if(resultado.textContent == "SINTAXIS ERROR"){
-        resultado.textContent = ""
+      if (resultado.textContent == "SINTAXIS ERROR") {
+        resultado.textContent = "";
       }
+
       resultado.textContent += tipo_boton;
     } else {
       if (botonesEspeciales[clase[0]]) {
